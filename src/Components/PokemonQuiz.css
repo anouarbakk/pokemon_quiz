@@ -1,0 +1,108 @@
+.cont {
+  border: 2px solid #007a5e;
+  min-height: 500px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 50px;
+  background-color: #00a36c;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin: 2rem auto;
+}
+
+.text {
+  color: white;
+  font-size: clamp(1rem, 4vw, 25px);
+  font-weight: bold;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  max-width: 400px;
+  margin-top: 15px;
+  background-color: #00a36c;
+  color: white;
+  font-size: clamp(0.8rem, 3vw, 20px);
+  font-weight: bold;
+  padding: 12px 24px;
+  border: 2px solid #007a5e;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-family: "Press Start 2P", cursive;
+}
+
+.progress-container {
+  width: 90vh;
+  max-width: 300px;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #2196f3;
+  transition: width 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .cont {
+    width: 95%;
+    padding: 1rem;
+    min-height: 400px;
+  }
+
+  .option {
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text {
+    font-size: clamp(0.9rem, 5vw, 1.2rem);
+  }
+
+  .option {
+    font-size: clamp(0.7rem, 3.5vw, 1rem);
+    padding: 8px 16px;
+  }
+
+  .progress-container {
+    height: 15px;
+    margin: 15px 0;
+  }
+}
+.option:hover {
+  background-color: #008057;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.option:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px rgba(0, 0, 0, 0.3);
+}

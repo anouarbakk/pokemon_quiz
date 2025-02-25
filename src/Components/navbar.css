@@ -1,0 +1,49 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 200px;
+}
+.navbar-item a {
+  text-decoration: none;
+  color: inherit;
+}
+.navbar-list {
+  list-style: none;
+  padding: 0;
+  margin: 10;
+}
+
+.navbar-item {
+  margin: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #00a36c;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: 2px solid #007a5e;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-family: "Press Start 2P", cursive;
+}
+
+.button:hover {
+  background-color: #008057;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px rgba(0, 0, 0, 0.3);
+}

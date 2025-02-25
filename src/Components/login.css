@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Press Start 2P", cursive;
+}
+
+.login-container {
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+}
+
+input {
+  background-color: #00a36c;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 12px;
+  border: 2px solid #007a5e;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-family: "Press Start 2P", cursive;
+  height: 30px;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.login-button {
+  background-color: #00a36c;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 12px;
+  border: 2px solid #007a5e;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-family: "Press Start 2P", cursive;
+  margin: 15px;
+  margin-left: 30px;
+}
+.signup-button {
+  background-color: #00a36c;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 12px;
+  border: 2px solid #007a5e;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-family: "Press Start 2P", cursive;
+  margin: 15px;
+  margin-left: 20px;
+}
+
+.login-button:hover {
+  background-color: #008057;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+.login-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+.signup-button:hover {
+  background-color: #008057;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+.signup-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
