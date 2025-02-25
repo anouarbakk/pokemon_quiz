@@ -6,8 +6,6 @@ import Login from "./Components/login";
 import Signup from "./Components/signup";
 import PokemonQuiz from "./Components/pokequiz";
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="container">
       <Routes>
