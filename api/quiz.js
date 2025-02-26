@@ -129,13 +129,17 @@ async function main() {
   return quizData;
 }
 
-export default async (req, res) => {
+const app = express();
+const port = 3000;
+app.use(cors());
+app.listen(port, () => console.log(`Server running on port ${port}`));
+app.get("/quiz", async (req, res) => {
   try {
     const data = await main();
     res.setHeader("Cache-Control", "no-store, max-age=0");
     res.status(200).json(data);
   } catch (error) {
-    console.error("API Error:", error);
-    res.status(500).json({ error: "Failed to generate quiz" });
+    console.error("Error:", error);
+    res.status(500).json({ error: error.message });
   }
-};
+});
