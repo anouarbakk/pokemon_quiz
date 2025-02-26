@@ -9,7 +9,7 @@ const Pokequiz = () => {
 
   useEffect(() => {
     // Add cache-busting parameter to URL
-    const url = `http://localhost:3000/quiz?timestamp=${Date.now()}`;
+    const url = `pokemon-quiz-qi2cedvtq-anouarbakks-projects.vercel.app/quiz?timestamp=${Date.now()}`;
 
     fetch(url, {
       headers: {
